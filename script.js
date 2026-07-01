@@ -3,8 +3,13 @@
   var els = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("in"); }); return; }
   var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
-  }, { threshold: 0.12, rootMargin: "0px 0px -60px 0px" });
+    entries.forEach(function (e) {
+      // Toggle instead of unobserve so the animation replays every time
+      // the element scrolls back into view.
+      if (e.isIntersecting) e.target.classList.add("in");
+      else e.target.classList.remove("in");
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -80px 0px" });
   els.forEach(function (e) { io.observe(e); });
 })();
 
