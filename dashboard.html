@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=1440"/>
+<title>Hubly CRM — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="side-profile">
+      <div class="avatar"></div>
+      <div class="who"><b>Bessie Cooper</b><span>Personal Account</span></div>
+      <svg class="icon" viewBox="0 0 24 24" style="color:#9296a7"><path d="m8 10 4-4 4 4"/><path d="m8 14 4 4 4-4"/></svg>
+    </div>
+    <div class="search">
+      <svg class="icon" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m20 20-4-4"/></svg>
+      <input placeholder="Search"/><span class="kbd">⌘ K</span>
+    </div>
+    <div class="side-label">Main Menu</div>
+    <div class="nav-item active"><svg class="icon" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/></svg>Dashboard</div>
+    <div class="nav-item"><svg class="icon" viewBox="0 0 24 24"><path d="M6 9a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>Notifications</div>
+    <div class="nav-item"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="m8 12 3 3 5-6"/></svg>Tasks</div>
+    <div class="nav-item"><svg class="icon" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h8l8 8-8 8-8-8V8Z"/><circle cx="8" cy="9" r="1.4"/></svg>Deals</div>
+    <div class="side-label">Records</div>
+    <div class="nav-item"><svg class="icon" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Analytics</div>
+    <div class="nav-item"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h6"/></svg>Companies</div>
+    <div class="nav-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M16 6a3 3 0 0 1 0 6"/></svg>Contacts</div>
+    <div class="side-spacer"></div>
+    <div class="nav-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3"/></svg>Settings</div>
+    <div class="nav-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3 2.4c-.8.4-1 .8-1 1.6"/><path d="M12 17h.01"/></svg>Help &amp; Getting Started</div>
+    <div class="pro-card">
+      <div class="ttl"><svg class="icon" viewBox="0 0 24 24" style="color:#fff"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>Pro Mode</div>
+      <p>Upgrade now to unlock all features you need.</p>
+      <div class="btn">Upgrade Pro →</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <h1>Dashboard</h1>
+      <div class="top-right">
+        <div class="pill"><svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>01 Feb 2025 - 01 Mar 2025</div>
+        <div class="pill">Monthly <svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="m6 9 6 6 6-6"/></svg></div>
+      </div>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="head"><div class="ibox" style="background:#efecfd;color:#6c4cf1"><svg class="icon" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="2.4"/><path d="M8.5 16c.7-1.6 2-2.4 3.5-2.4s2.8.8 3.5 2.4"/></svg></div><svg class="icon dots" viewBox="0 0 24 24" style="width:20px;height:20px;stroke:none;fill:currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+        <div class="lab">Total Contact</div>
+        <div class="val"><b>162 Contact</b><span class="chip down"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg>1.1%</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="head"><div class="ibox" style="background:#fceef0;color:#e0557a"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h6"/></svg></div><svg class="icon dots" viewBox="0 0 24 24" style="width:20px;height:20px;stroke:none;fill:currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+        <div class="lab">Active Company</div>
+        <div class="val"><b>43 Company</b><span class="chip down"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg>1.7%</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="head"><div class="ibox" style="background:#e8f1fe;color:#3b82f6"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><svg class="icon dots" viewBox="0 0 24 24" style="width:20px;height:20px;stroke:none;fill:currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+        <div class="lab">Ongoing Task</div>
+        <div class="val"><b>5 Task</b><span class="chip up"><svg class="icon" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg>1.7%</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="head"><div class="ibox" style="background:#e6f6f9;color:#21b8c6"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><svg class="icon dots" viewBox="0 0 24 24" style="width:20px;height:20px;stroke:none;fill:currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+        <div class="lab">Email Sent</div>
+        <div class="val"><b>1,251 Mail</b><span class="chip up"><svg class="icon" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg>8.7%</span></div>
+      </div>
+    </div>
+
+    <div class="charts">
+      <div class="panel rev">
+        <div class="p-head"><h3>Revenue forecast</h3><div class="seg"><span class="on">Monthly</span><span>Quarterly</span><span>Yearly</span></div></div>
+        <div class="rev-val"><div class="l"><b>$23,569.00</b><span class="chip up"><svg class="icon" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg>5.2%</span><span class="from">from last period</span></div>
+          <div class="legend"><span><i class="dot p"></i>This period</span><span><i class="dot c"></i>Last period</span></div></div>
+        <div class="chart">
+          <svg viewBox="0 0 720 230" font-family="Inter, sans-serif">
+            <g stroke="#eef0f4"><line x1="60" y1="20" x2="705" y2="20"/><line x1="60" y1="70" x2="705" y2="70"/><line x1="60" y1="120" x2="705" y2="120"/><line x1="60" y1="170" x2="705" y2="170"/></g>
+            <g fill="#9296a7" font-size="11"><text x="18" y="24">$20K</text><text x="18" y="74">$15K</text><text x="18" y="124">$10K</text><text x="24" y="174">$5K</text></g>
+            <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c5cff" stop-opacity=".25"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></linearGradient></defs>
+            <path d="M60 122 140 96 220 46 300 88 380 58 460 88 540 50 620 80 700 62 L700 190 L60 190 Z" fill="url(#g1)"/>
+            <path d="M60 122 140 96 220 46 300 88 380 58 460 88 540 50 620 80 700 62" fill="none" stroke="#7c5cff" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M60 139 140 126 220 113 300 122 380 105 460 117 540 96 620 113 700 101" fill="none" stroke="#5cc6ef" stroke-width="2.5" stroke-linejoin="round"/>
+            <line x1="220" y1="24" x2="220" y2="190" stroke="#c7b9ff" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <circle cx="220" cy="46" r="5" fill="#7c5cff" stroke="#fff" stroke-width="2"/>
+            <g fill="#9296a7" font-size="11" text-anchor="middle"><text x="60" y="212">Jan</text><text x="140" y="212">Feb</text><text x="220" y="212">Mar</text><text x="300" y="212">Apr</text><text x="380" y="212">May</text><text x="460" y="212">Jun</text><text x="540" y="212">Jul</text><text x="620" y="212">Aug</text><text x="700" y="212">Sep</text></g>
+            <g><rect x="238" y="76" width="134" height="62" rx="8" fill="#fff" stroke="#ececf1"/><text x="250" y="97" fill="#1d1d2c" font-size="12" font-weight="600">Mar 02</text><text x="360" y="97" fill="#16b364" font-size="11" text-anchor="end">2.5%</text><circle cx="253" cy="112" r="3" fill="#7c5cff"/><text x="262" y="116" fill="#6b7280" font-size="11">Revenue</text><text x="360" y="116" fill="#1d1d2c" font-size="11" text-anchor="end" font-weight="600">$2,312.01</text><circle cx="253" cy="128" r="3" fill="#5cc6ef"/><text x="262" y="132" fill="#6b7280" font-size="11">Target</text><text x="360" y="132" fill="#1d1d2c" font-size="11" text-anchor="end" font-weight="600">$2,001.16</text></g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="panel src">
+        <div class="p-head"><h3>Source</h3><div class="pill" style="padding:6px 8px 6px 10px;font-size:12px">Weekly <svg class="icon" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="m6 9 6 6 6-6"/></svg></div></div>
+        <div class="src-val"><b>12,569</b><span class="chip up"><svg class="icon" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg>2.1%</span></div>
+        <svg class="bars" viewBox="0 0 320 30" id="bars"></svg>
+        <div class="legend"><span><i class="dot p"></i>Website</span><span><i class="dot c"></i>Email</span><span><i class="dot" style="background:#34d0c4"></i>Social Media</span></div>
+        <table class="src-tbl">
+          <tr><th>Details</th><th>Metric</th><th>Total</th></tr>
+          <tr><td>Acquisition</td><td>$12.01</td><td class="mini-up">↑ 1.1%</td></tr>
+          <tr><td>Conversion</td><td>1.2 days</td><td class="mini-down">↓ 2.0%</td></tr>
+          <tr><td>ROI</td><td>98%</td><td class="mini-up">↑ 1.7%</td></tr>
+        </table>
+        <div class="btn-ghost">View reports</div>
+      </div>
+    </div>
+
+    <div class="contacts-panel">
+      <div class="cp-head"><h3>Contacts</h3><div class="cp-tools">
+        <div class="pill" style="font-weight:400;color:#9296a7"><svg class="icon" viewBox="0 0 24 24" style="width:14px;height:14px"><circle cx="10" cy="10" r="6"/><path d="m20 20-4-4"/></svg>Search contact...</div>
+        <div class="pill"><svg class="icon" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filter</div>
+      </div></div>
+      <table class="tbl">
+        <thead><tr><th style="width:26px"><div class="cbx"></div></th><th>Name</th><th>Email</th><th>Phone</th><th>Location</th><th>Lead Status</th><th>Gender</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><div class="cbx"></div></td><td class="name"><div class="avatar sm" style="background:#d9c9a3"></div>Jane Cooper</td><td>lesliealx01@mail.com</td><td>(406) 555-0120</td><td>2972 Westheimer Rd...</td><td><span class="tag new"><i class="dot"></i>New</span></td><td>♀ Female</td><td class="dots">···</td></tr>
+          <tr><td><div class="cbx on"><svg class="icon" viewBox="0 0 24 24" style="width:11px;height:11px;stroke:#fff"><path d="m5 12 4 4 8-9"/></svg></div></td><td class="name"><div class="avatar sm" style="background:#a3c3e0"></div>Wade Warren</td><td>floydmiles@mail.com</td><td>(480) 555-0103</td><td>1901 Thornridge Cir. S...</td><td><span class="tag bad"><i class="dot"></i>Bad Timing</span></td><td>♂ Male</td><td class="dots">···</td></tr>
+          <tr><td><div class="cbx"></div></td><td class="name"><div class="avatar sm" style="background:#e0a3c0"></div>Esther Howard</td><td>jromebell@mail.com</td><td>(603) 555-0123</td><td>4140 Parker Rd. Allent...</td><td><span class="tag cust"><i class="dot"></i>Customers</span></td><td>♂ Male</td><td class="dots">···</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script>
+// source bar strip
+(function(){
+  var cols=["#7c5cff","#7c5cff","#5cc6ef","#34d0c4","#7c5cff","#5cc6ef","#7c5cff","#34d0c4","#5cc6ef","#7c5cff"];
+  var hs=[16,22,12,26,18,24,14,20,28,16,22,12], s="";
+  for(var i=0;i<58;i++){var x=(i*5.4).toFixed(1),h=hs[i%hs.length];s+='<rect x="'+x+'" y="'+(30-h)+'" width="3" height="'+h+'" rx="1.5" fill="'+cols[i%cols.length]+'"/>';}
+  document.getElementById('bars').innerHTML=s;
+})();
+</script>
+</body>
+</html>
